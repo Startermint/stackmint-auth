@@ -8,7 +8,7 @@ ob_start();
 <main>
     <div class="card">
         <h1>Sign in</h1>
-        <p class="subtitle">Log in to manage your tasks.</p>
+        <p class="subtitle">Log in to continue into your application.</p>
 
         <?php if (is_string($status) && $status !== ''): ?>
             <div class="flash"><?= htmlspecialchars($status, ENT_QUOTES, 'UTF-8') ?></div>

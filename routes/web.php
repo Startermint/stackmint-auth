@@ -18,7 +18,10 @@ $router->group([
 
 $router->group([
     'middleware' => ['auth.web'],
-], static function ($router): void {
-    $router->get('/dashboard', DashboardController::class, 'auth.dashboard');
+], static function ($router) use ($config): void {
+    if ($config->get('auth.register_dashboard_route', true) !== false) {
+        $router->get('/dashboard', DashboardController::class, 'auth.dashboard');
+    }
+
     $router->post('/logout', [LogoutController::class, 'store'], 'auth.logout');
 });

@@ -7,7 +7,7 @@ ob_start();
 <main>
     <div class="card">
         <h1>Create account</h1>
-        <p class="subtitle">Start using the task app.</p>
+        <p class="subtitle">Create an account to start using the application.</p>
 
         <form method="post" action="/register">
             <?= $form->csrfField() ?>
