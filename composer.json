@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "wayfinder/core": "0.0.1"
+        "wayfinder/core": "0.0.2"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
