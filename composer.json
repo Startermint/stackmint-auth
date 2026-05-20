@@ -1,5 +1,5 @@
 {
-    "name": "trafficinc/stackmint-auth",
+    "name": "startermint/stackmint-auth",
     "description": "Authentication module for the Stackmint framework.",
     "type": "library",
     "license": "MIT",
@@ -7,14 +7,14 @@
         "php": "^8.2"
     },
     "require-dev": {
-        "wayfinder/core": "0.0.3"
+        "wayfinder/core": "0.0.19"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:trafficinc/wayfinder-core.git",
+            "url": "git@github.com:Startermint/wayfinder-core.git",
             "no-api": true
         }
     ],

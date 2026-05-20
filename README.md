@@ -8,8 +8,8 @@ It is intentionally kept app-agnostic. The package should handle authentication 
 
 ## Package identity
 
-- Composer package: `trafficinc/stackmint-auth`
-- GitHub repo: `trafficinc/stackmint-auth`
+- Composer package: `startermint/stackmint-auth`
+- GitHub repo: `startermint/stackmint-auth`
 
 ## Install into an app
 
@@ -21,7 +21,7 @@ php wayfinder module:install auth
 
 That should:
 
-1. require `trafficinc/stackmint-auth` with Composer
+1. require `startermint/stackmint-auth` with Composer
 2. create a symlink at `Modules/Auth`
 
 The `auth` alias itself belongs in the host app's `config/modules.php` package map. It should not be hard-coded as package-owned metadata inside `stackmint-auth`.
@@ -59,7 +59,7 @@ That means the host application controls the final destination page. In a simple
 
 ## Schema ownership
 
-`trafficinc/stackmint-auth` should not own the application's core `users` table migration. That table belongs in the starter app or host application so each app can control its user schema directly.
+`startermint/stackmint-auth` should not own the application's core `users` table migration. That table belongs in the starter app or host application so each app can control its user schema directly.
 
 If this package ever needs additional auth-specific tables, those should be limited to auth concerns only.
 
